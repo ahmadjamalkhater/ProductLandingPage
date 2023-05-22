@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Product Landing Page</title>
+  <style>
+    /* CSS Flexbox example */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .product-card {
+      flex-basis: 300px;
+      margin-bottom: 20px;
+      padding: 20px;
+      background-color: #f0f0f0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Positioning the nav-bar */
+    #nav-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+    }
+
+    #nav-bar ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    #nav-bar li {
+      margin: 0 10px;
+    }
+
+    #nav-bar a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /* Media Query */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .product-card {
+        flex-basis: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header id="header">
+    <img src="logo.png" alt="Logo" id="header-img">
+    <nav id="nav-bar">
+      <ul>
+        <li><a class="nav-link" href="#section1">Section 1</a></li>
+        <li><a class="nav-link" href="#section2">Section 2</a></li>
+        <li><a class="nav-link" href="#section3">Section 3</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="section1">
+    <h2>Section 1</h2>
+    ahmad jamal khater
+    ahmad jamal khater
+    ahmad jamal khater
+    ahmad jamal khater
+  </section>
+
+  <section id="section2">
+    <h2>Section 2</h2>
+    ahmad jamal khater
+    ahmad jamal khater
+    ahmad jamal khater
+  </section>
+
+  <section id="section3">
+    <h2>Section 3</h2>
+    ahmad jamal khater
+    ahmad jamal khater
+    ahmad jamal khater
+  </section>
+
+  <video src="product-video.mp4" controls id="video"></video>
+
+  <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    <input type="submit" id="submit" value="Submit">
+  </form>
+  
+
+  <script src="script.js"></script>
+</body>
+
+</html>
